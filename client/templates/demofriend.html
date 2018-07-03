@@ -1,0 +1,73 @@
+<ion-view >
+   <ion-content  >
+<div class="list card">
+
+    
+    <div class="bar bar-header "  style="background-color:#FF8888; ">
+      <!--<img class="full-image" src="{{logger.data.picture.data.url}}">-->
+  <h1 class="title"> --AbOUT ME--</h1>
+</div>
+
+  <div class="item item-body">
+    <p align="center">
+     <marquee behavior="alternate" width="380" height="300" onmouseover="this.stop()" onmouseout="this.start()">
+<a href="https://upload.wikimedia.org/wikipedia/zh/thumb/9/9a/Jolin_Tsai_Muse.jpg/250px-Jolin_Tsai_Muse.jpg" target="_blank">
+  <img border="0" src="https://graph.facebook.com/1073207159375953/picture?width=1000&height=1000" width="380" height="300"></a>
+<a href="https://upload.wikimedia.org/wikipedia/zh/thumb/9/9a/Jolin_Tsai_Muse.jpg/250px-Jolin_Tsai_Muse.jpg" target="_blank">
+  <img border="0" src="/okok.jpg" width="280" height="300"></a>
+<a href="https://upload.wikimedia.org/wikipedia/zh/thumb/9/9a/Jolin_Tsai_Muse.jpg/250px-Jolin_Tsai_Muse.jpg" target="_blank">
+  <img border="0" src="/hh1.jpg" width="350" height="300"></a>
+</marquee>
+ 
+
+</p>
+     
+    
+    
+    <div class="item item-divider" style="text-align:center;background-color:#FF8888; "  >
+    [ 姓名 ]
+  </div>
+   <div class="item" href="#" style="text-align:center">
+   {{logger.data.name}}
+  </div>
+  <div class="item item-divider" style="text-align:center;background-color:#FF8888; ">
+    [ 性別 ]
+  </div>
+   <div class="item" href="#" style="text-align:center">
+   {{logger.data.gender}}
+  </div>
+  <div class="item item-divider" style="text-align:center;background-color:#FF8888; ">
+    [ 生日 ]
+  </div>
+   <div class="item" href="#" style="text-align:center">
+   {{logger.data.birthday}}
+  </div>
+  <div class="item item-divider" style="text-align:center;background-color:#FF8888; ">
+    [ 學歷 ]
+  </div>
+   <div class="item" href="#" ng-repeat="response in logger.data.education">   
+      {{response.type}}  : {{response.school.name}}
+  </div>
+  <div class="item item-divider" style="text-align:center;background-color:#FF8888; ">
+    [ 社團經歷 ]
+  </div>
+   <div class="item" href="#" ng-repeat="response in logger.data.work">   
+      {{response.employer.name}}   {{response.position.name}}
+  </div>
+    
+    
+  
+
+</div>
+
+
+
+        
+     
+    
+
+
+  </div>      
+ </ion-content  >
+
+</ion-view>  
